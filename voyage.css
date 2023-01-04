@@ -194,6 +194,7 @@ p {
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
+    margin-top: 5%;
     padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
     padding-right: 8%;
     background-image: url(images/drapeaupays.jpg);
@@ -296,6 +297,7 @@ p {
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
+    margin-top: 5%;
     padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
     padding-right: 8%;
     background-image: url(images/Suisse/backgroundsuisse.png);
@@ -399,6 +401,7 @@ p {
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
+    margin-top: 5%;
     padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
     padding-right: 8%;
     background-image: url(images/Tahiti/backgroundtahiti.jpg);
