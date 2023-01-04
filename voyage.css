@@ -33,6 +33,7 @@ h2, h3, h4 {
 
 h2 {
     font-size: 2.5em;
+    padding-top: 4%;
 }
 h3 {
     font-size: 2em;
@@ -101,50 +102,78 @@ p {
 }
 
 /* Menu deroulant */
+#nav {
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-.menu {
-    margin-top: 0;
-    display: inline-block;
-  }
-  .menu > li {
+#nav li {
+    display: block;
+    position: relative;
     float: left;
+    background: #190c00e4;
+    /* menu background color */
+}
+
+#nav li a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    width: 180px;
+    /* this is the width of the menu items */
+    line-height: 35px;
+    /* this is the hieght of the menu items */
     color: #ffffff;
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    background: rgba(1, 4, 26, 0.7);
-    cursor: pointer;
-    font-size: 17px;
-  }
-  .sub-menu {
-    transform: scale(0);
-    transform-origin: top center;
-    transition: all 300ms ease-in-out;
-  }
-  .sub-menu li {
-    font-size: 14px;
-    background: rgba(1, 4, 26, 0.7);
-    padding: 8px 0;
-    color: white;
-    border-bottom: 1px solid rgba(1, 4, 26, 0.7);
-    transform: scale(0);
-    transform-origin: top center;
-    transition: all 300ms ease-in-out;
-  }
-  .sub-menu li:last-child {
-    color: white;
-    border-bottom: 0;
-  }
-  .sub-menu li:hover {
-    background: rgb(0, 0, 0);
-  }
-  .menu > li:hover .sub-menu li {
-    transform: scale(1);
-  }
-  .menu > li:hover .sub-menu {
-    transform: scale(1);
-  }
-  
+    /* list item font color */
+}
+
+#nav li li a {
+    font-size: 80%;
+}
+
+/* smaller font size for sub menu items */
+
+#nav li:hover {
+    background: #3f1300;
+}
+
+/* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+#nav ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+    /* hides sublists */
+}
+
+#nav li:hover ul ul {
+    display: none;
+}
+
+/* hides sub-sublists */
+
+#nav li:hover ul {
+    display: block;
+}
+
+/* shows sublist on hover */
+
+#nav li li:hover ul {
+    display: block;
+    /* shows sub-sublist on hover */
+    margin-left: 180px;
+    /* this should be the same width as the parent list item */
+    margin-top: -35px;
+    /* aligns top of sub menu with top of list item */
+}
+.home {
+    width: 20%;
+    height: 20%;
+}
+
 /*Banniere*/
 #banniere {
     text-align: center;
@@ -166,6 +195,10 @@ p {
     margin: auto;
 }
 
+.section:hover {
+    animation: .5s linear 1s infinite alternate slidein;
+}
+
 .section article {
     width: 370px;
     height: 500px;
@@ -175,6 +208,10 @@ p {
 
 .section article p {
     padding: 0 20px 20px 20px;
+}
+.imgPresentation {
+    width: 370px;
+    height: 200px;
 }
 
 /* footer */
@@ -265,7 +302,7 @@ h3 {
 
 /* pages de yasmine */
 
-.main {
+.mon-main {
     margin: 5%;
     background-color: rgba(255, 253, 237, 0.774);
     display: flex;
@@ -273,7 +310,7 @@ h3 {
     border: thick double #fed800;
 }
 
-.sousmain {
+.mon-sousmain {
     font-size: 105%;
     color: rgba(0, 2, 4, 0.842);
     font-family: cursive;
@@ -290,4 +327,614 @@ h3 {
 .monh2 {
     padding-top: 0;
     padding-bottom: 4%;
+}
+
+/* PARTIE DE JEAN SEB */
+
+/*Titre et texte + background*/
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
+    padding-right: 8%;
+    background-image: url(images/drapeaupays.jpg);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-y: 88%;
+    background-position-x: 38%;
+}
+
+.col{
+    flex-basis: 80%;
+}
+
+.col > h1{
+    color: rgb(180, 12, 46);
+    font-size: 100px;
+}
+
+.col > p{
+    color: rgb(0, 31, 88);
+    font-size: 15px;
+    line-height: 50px;
+}
+
+/*Bouton*/
+
+button{
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 12px 0;
+    background: rgb(0, 31, 88);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*cards*/
+
+.card{
+    width: 230px;
+    height: 260px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url(images/card1.webp);
+}
+.card2{
+    background-image: url(images/card2.jpg);
+}
+.card3{
+    background-image: url(images/card3.jpeg);
+}
+.card4{
+    background-image: url(images/card4.jpg);
+}
+.card5{
+    background-image: url(images/card5.jpg);
+}
+.card6{
+    background-image: url(images/card6.jpeg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card > h5{
+    color:rgb(180, 12, 46);
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+    color: #fff;
+}
+
+/***************NORVEGE***************/
+
+@media only screen and (max-width: 1080px){
+    .col {
+        display: none;
+    }
+}
+
+
+/*Titre et texte + background*/
+.row-norvege{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-top: 5%;
+    padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
+    padding-right: 8%;
+    background-image: url(images/drapeaupays.jpg);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-y: 88%;
+    background-position-x: 28%;
+}
+
+.col-norvege{
+    flex-basis: 80%;
+}
+
+.col-norvege > h1{
+    color: rgb(180, 12, 46);
+    font-size: 100px;
+}
+
+.col-norvege > p{
+    color: rgb(0, 31, 88);
+    font-size: 15px;
+    line-height: 50px;
+}
+
+/*Bouton*/
+
+.button-norvege{
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 12px 0;
+    background: rgb(0, 31, 88);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*cards*/
+
+.card{
+    width: 230px;
+    height: 260px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url(images/card1.webp);
+}
+.card2{
+    background-image: url(images/card2.jpg);
+}
+.card3{
+    background-image: url(images/card3.jpeg);
+}
+.card4{
+    background-image: url(images/card4.jpg);
+}
+.card5{
+    background-image: url(images/card5.jpg);
+}
+.card6{
+    background-image: url(images/card6.jpeg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card > h5{
+    color:rgb(180, 12, 46);
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+    color: #fff;
+}
+
+/***************NORVEGE***************/
+
+/***************SUISSE***************/
+
+/*Titre et texte + background*/
+.row-suisse{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-top: 5%;
+    padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
+    padding-right: 8%;
+    background-image: url(images/Suisse/backgroundsuisse.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-y:78%;
+    background-position-x: 35%;
+}
+
+.col-suisse{
+    flex-basis: 80%;
+}
+
+.col-suisse > h1{
+    color: rgb(255, 0, 0);
+    font-size: 100px;
+}
+
+.col-suisse > p{
+    color: rgb(47, 47, 48);
+    font-size: 15px;
+    line-height: 50px;
+}
+
+/*Bouton*/
+
+.button-suisse{
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 12px 0;
+    background: rgb(175, 174, 174);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*cards*/
+
+.card{
+    width: 230px;
+    height: 260px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1suisse{
+    background-image: url(images/Suisse/card1suisse.jpg);
+}
+.card2suisse{
+    background-image: url(images/Suisse/card2suisse.webp);
+}
+.card3suisse{
+    background-image: url(images/Suisse/card3suisse.jpg);
+}
+.card4suisse{
+    background-image: url(images/Suisse/card4suisse.jpg);
+}
+.card5suisse{
+    background-image: url(images/Suisse/card5suisse.jpg);
+}
+.card6suisse{
+    background-image: url(images/Suisse/card6suisse.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card > h5{
+    color:rgb(252, 0, 0);
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+    color: #fff;
+}
+
+/***************SUISSE***************/
+
+
+/***************TAHITI***************/
+
+/*Titre et texte + background*/
+.row-tahiti{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-top: 5%;
+    padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
+    padding-right: 8%;
+    background-image: url(images/Tahiti/backgroundtahiti.jpg);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-y: 58%;
+    background-position-x: 10%;
+}
+
+.col-tahiti{
+    flex-basis: 80%;
+}
+
+.col-tahiti > h1{
+    color: #A50C12;
+    font-size: 100px;
+}
+
+.col-tahiti > p{
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    line-height: 50px;
+}
+
+/*Bouton*/
+
+.button-tahiti{
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 12px 0;
+    background: #AA7C52;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*cards*/
+
+.card{
+    width: 230px;
+    height: 260px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1tahiti{
+    background-image: url(images/Tahiti/card1tahiti.jpg);
+}
+.card2tahiti{
+    background-image: url(images/Tahiti/card2tahiti.jpg);
+}
+.card3tahiti{
+    background-image: url(images/Tahiti/card3tahiti.jpg);
+}
+.card4tahiti{
+    background-image: url(images/Tahiti/card4tahiti.jpg);
+}
+.card5tahiti{
+    background-image: url(images/Tahiti/card5tahiti.jpg);
+}
+.card6tahiti{
+    background-image: url(images/Tahiti/card6tahiti.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card > h5{
+    color:rgb(252, 0, 0);
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+    color: #fff;
+}
+
+/***************TAHITI***************/
+
+
+
+
+/*Footer*/
+#footer {
+    width: 100%;
+    height: 400px;
+    background-color: #2b252b;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-small;
+}
+
+.reseaux-contact {
+    border-radius: 50px;
+    box-shadow: 0 5px 20px -5px #000000;
+    background-color: #352f2f;
+    width: 500px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reseaux-contact ul li {
+    padding: 10px;
+}
+
+.reseaux-contact img {
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
+
+.reseaux-contact img:hover {
+    background-color: rgb(118, 201, 235);
+}
+
+/* contact */
+
+.contenair {
+    color: aliceblue;
+    background-color: rgb(31, 19, 0);
+    margin-top: 3%;
+    padding : 3%;
+    line-height: 200%;
+} 
+
+h3 {
+    padding: 3%;
+}
+
+/* PAGE CONTACT */
+
+#contacter{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 2.7em;
+    margin: 0;
+}
+.paragraphe{
+    margin: 20px 0;
+}
+.paragraphe{
+    opacity: 0.81;
+    font-size: 18px;
+}
+.btn-link, input[type="submit"]{
+    display: block;
+    line-height: 60px;
+    border: 1px solid  #fff;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    border-radius: 9999px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: .2s;
+    cursor: pointer;
+}
+/* CSS DE GREGORY */ 
+
+/* Pays-bas */
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(226, 228, 240);
+}
+.main .content .greg-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 2%;
+}
+.main .content .greg-card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: black;
+    color: rgb(240, 240, 235);
+    font-size: 70%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+/* **********pourquoi enlever espace greg-card.right fonctionne? */
+.main .content .greg-card.right{
+    flex: 0 0 70%;
+    
+}
+.main .content .greg-card .right img {
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+/* css mexique */
+.main2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(226, 228, 240);
+}
+.main2 .content2 .greg-card2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 2%;
+}
+.main2 .content2 .greg-card2 .left2{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: rgba(35, 66, 13, 0.444);
+    color: rgb(0, 0, 0);
+    font-size: 70%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* **********pourquoi enlever espace card.right fonctionne? */
+.main2 .content2 .greg-card2.right2{
+    flex: 0 0 70%;
+}
+.main2 .content2 .greg-card2 .right2 img {
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+/* css cote-d'ivoire */
+.main3 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(226, 228, 240);
+}
+.main3 .content3 .greg-card3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 2%;
+}
+.main3 .content3 .greg-card3 .left3{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: rgba(177, 135, 21, 0.7);
+    color: rgb(12, 117, 21);
+    font-size: 70%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* **********pourquoi enlever espace greg-card.right fonctionne? */
+.main3 .content3 .greg-card3.right3{
+    flex: 0 0 70%;
+}
+.main3 .content3 .greg-card3 .right3 img {
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
 }
