@@ -179,7 +179,7 @@ p {
 /***************NORVEGE***************/
 
 /*Titre et texte + background*/
-.row{
+.row-norvege{
     display: flex;
     align-items: center;
     width: 100%;
@@ -193,19 +193,19 @@ p {
     background-size: 55%;
     background-repeat: no-repeat;
     background-position-y: 88%;
-    background-position-x: 38%;
+    background-position-x: 28%;
 }
 
-.col{
+.col-norvege{
     flex-basis: 80%;
 }
 
-.col > h1{
+.col-norvege > h1{
     color: rgb(180, 12, 46);
     font-size: 100px;
 }
 
-.col > p{
+.col-norvege > p{
     color: rgb(0, 31, 88);
     font-size: 15px;
     line-height: 50px;
@@ -213,7 +213,7 @@ p {
 
 /*Bouton*/
 
-button{
+.button-norvege{
     width: 180px;
     color: rgb(255, 255, 255);
     font-size: 12px;
@@ -281,7 +281,7 @@ button{
 /***************SUISSE***************/
 
 /*Titre et texte + background*/
-.row{
+.row-suisse{
     display: flex;
     align-items: center;
     width: 100%;
@@ -294,20 +294,20 @@ button{
     background-image: url(images/Suisse/backgroundsuisse.png);
     background-size: 55%;
     background-repeat: no-repeat;
-    background-position-y: 68%;
-    background-position-x: 38%;
+    background-position-y:78%;
+    background-position-x: 35%;
 }
 
-.col{
+.col-suisse{
     flex-basis: 80%;
 }
 
-.col > h1{
-    color: #DA291C;
+.col-suisse > h1{
+    color: rgb(255, 0, 0);
     font-size: 100px;
 }
 
-.col > p{
+.col-suisse > p{
     color: rgb(47, 47, 48);
     font-size: 15px;
     line-height: 50px;
@@ -315,12 +315,12 @@ button{
 
 /*Bouton*/
 
-button{
+.button-suisse{
     width: 180px;
     color: rgb(255, 255, 255);
     font-size: 12px;
     padding: 12px 0;
-    background: rgb(82, 52, 43);
+    background: rgb(175, 174, 174);
     border: 0;
     border-radius: 20px;
     outline: none;
@@ -384,7 +384,7 @@ button{
 /***************TAHITI***************/
 
 /*Titre et texte + background*/
-.row{
+.row-tahiti{
     display: flex;
     align-items: center;
     width: 100%;
@@ -397,28 +397,28 @@ button{
     background-image: url(images/Tahiti/backgroundtahiti.jpg);
     background-size: 55%;
     background-repeat: no-repeat;
-    background-position-y: 48%;
+    background-position-y: 58%;
     background-position-x: 10%;
 }
 
-.col{
+.col-tahiti{
     flex-basis: 80%;
 }
 
-.col > h1{
+.col-tahiti > h1{
     color: #A50C12;
     font-size: 100px;
 }
 
-.col > p{
-    color: rgb(4, 41, 76);
+.col-tahiti > p{
+    color: rgb(32, 32, 32);
     font-size: 15px;
     line-height: 50px;
 }
 
 /*Bouton*/
 
-button{
+.button-tahiti{
     width: 180px;
     color: rgb(255, 255, 255);
     font-size: 12px;
