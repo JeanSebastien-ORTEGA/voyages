@@ -178,6 +178,13 @@ p {
 
 /***************NORVEGE***************/
 
+@media only screen and (max-width: 1080px){
+    .col {
+        display: none;
+    }
+}
+
+
 /*Titre et texte + background*/
 .row-norvege{
     display: flex;
