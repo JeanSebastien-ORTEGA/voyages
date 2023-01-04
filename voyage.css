@@ -1,0 +1,406 @@
+/*Général*/
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body, header {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+/* Bloc page*/
+
+#bloc-page {
+    display: flex;
+    flex-direction: column;
+}
+
+/*header*/
+
+#header {
+    background: url(https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-shadow: 5px, 5px, 10px black;
+}
+
+#header a {
+    color: white;
+}
+
+/*Titre principal*/
+#titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+}
+
+#titre h1 {
+    font-size: 4em;
+}
+
+#titre p {
+    font-size: 3em;
+    margin: 1em;
+    border-top: 5px double white;
+}
+
+
+#titre footer {
+    margin-bottom: 8em;
+}
+
+#titre footer a:hover {
+    background-color: rgb(214, 152, 17);
+}
+
+/* Menu deroulant */
+
+.menu {
+    margin-top: 0;
+    display: inline-block;
+  }
+  .menu > li {
+    float: left;
+    color: #ffffff;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(1, 4, 26, 0.7);
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .sub-menu {
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+  .sub-menu li {
+    font-size: 14px;
+    background: rgba(1, 4, 26, 0.7);
+    padding: 8px 0;
+    color: white;
+    border-bottom: 1px solid rgba(1, 4, 26, 0.7);
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+  .sub-menu li:last-child {
+    color: white;
+    border-bottom: 0;
+  }
+  .sub-menu li:hover {
+    background: rgb(0, 0, 0);
+  }
+  .menu > li:hover .sub-menu li {
+    transform: scale(1);
+  }
+  .menu > li:hover .sub-menu {
+    transform: scale(1);
+  }
+/*Banniere*/
+#banniere {
+    text-align: center;
+    padding: 100px;
+}
+
+/*Section */
+
+#section header {
+    margin-top: 5%;
+}
+
+.section {
+    width: 1200px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.section article {
+    width: 370px;
+    height: 500px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px -5px #000000;
+}
+
+.section article p {
+    padding: 0 20px 20px 20px;
+}
+
+/***************NORVEGE***************/
+
+/*Titre et texte + background*/
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
+    padding-right: 8%;
+    background-image: url(images/drapeaupays.jpg);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position-y: 88%;
+    background-position-x: 38%;
+}
+
+.col{
+    flex-basis: 80%;
+}
+
+.col > h1{
+    color: rgb(180, 12, 46);
+    font-size: 100px;
+}
+
+.col > p{
+    color: rgb(0, 31, 88);
+    font-size: 15px;
+    line-height: 50px;
+}
+
+/*Bouton*/
+
+button{
+    width: 180px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 12px 0;
+    background: rgb(0, 31, 88);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*cards*/
+
+.card{
+    width: 230px;
+    height: 260px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url(images/card1.webp);
+}
+.card2{
+    background-image: url(images/card2.jpg);
+}
+.card3{
+    background-image: url(images/card3.jpeg);
+}
+.card4{
+    background-image: url(images/card4.jpg);
+}
+.card5{
+    background-image: url(images/card5.jpg);
+}
+.card6{
+    background-image: url(images/card6.jpeg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card > h5{
+    color:rgb(180, 12, 46);
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+    color: #fff;
+}
+
+/***************NORVEGE***************/
+
+
+
+
+/*Footer*/
+#footer {
+    width: 100%;
+    height: 400px;
+    background-color: #2b252b;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-small;
+}
+
+.reseaux-contact {
+    border-radius: 50px;
+    box-shadow: 0 5px 20px -5px #000000;
+    background-color: #352f2f;
+    width: 500px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reseaux-contact ul li {
+    padding: 10px;
+}
+
+.reseaux-contact img {
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
+
+.reseaux-contact img:hover {
+    background-color: rgb(118, 201, 235);
+}
+
+/* contact */
+
+.contenair {
+    color: aliceblue;
+    background-color: rgb(31, 19, 0);
+    margin-top: 3%;
+    padding : 3%;
+    line-height: 200%;
+} 
+
+h3 {
+    padding: 3%;
+}
+
+/* PAGE CONTACT */
+
+#contacter{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 2.7em;
+    margin: 0;
+}
+.paragraphe{
+    margin: 20px 0;
+}
+.paragraphe{
+    opacity: 0.81;
+    font-size: 18px;
+}
+.btn-link, input[type="submit"]{
+    display: block;
+    line-height: 60px;
+    border: 1px solid  #fff;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    border-radius: 9999px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+/*Contacter*/
+
+#contacter .title{
+    color: #f56404;
+}
+
+
+.group-form{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.group-form input[type="text"],
+.group-form input[type="email"],
+.group-form input[type="message"]{
+    width: 250px;
+    height: 40px;
+    border: 1px solid #707070;
+    border-radius: 9999px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+#contacter .contacter{
+    background: #dc5901;
+    margin: 0 auto;
+}
+
+#contacter .contacter:hover{
+    background: #fff;
+    color: #dc5901;
+    border: 1px solid #dc5901;
+}
