@@ -144,6 +144,7 @@ p {
   .menu > li:hover .sub-menu {
     transform: scale(1);
   }
+  
 /*Banniere*/
 #banniere {
     text-align: center;
@@ -176,45 +177,7 @@ p {
     padding: 0 20px 20px 20px;
 }
 
-/*Footer*/
-#footer {
-    width: 100%;
-    height: 400px;
-    background-color: #2b252b;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-size: x-small;
-}
-
-.reseaux-contact {
-    border-radius: 50px;
-    box-shadow: 0 5px 20px -5px #000000;
-    background-color: #352f2f;
-    width: 500px;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.reseaux-contact ul li {
-    padding: 10px;
-}
-
-.reseaux-contact img {
-    background-color: #ffffff;
-    width: 50px;
-    height: 50px;
-}
-
-.reseaux-contact img:hover {
-    background-color: rgb(118, 201, 235);
-}
-
-/* contact */
+/* footer */
 
 .contenair {
     color: aliceblue;
@@ -264,7 +227,6 @@ h3 {
     cursor: pointer;
 }
 
-
 /*Contacter*/
 
 #contacter .title{
@@ -298,4 +260,34 @@ h3 {
     background: #fff;
     color: #dc5901;
     border: 1px solid #dc5901;
+}
+/* fin de la page contact */
+
+/* pages de yasmine */
+
+.main {
+    margin: 5%;
+    background-color: rgba(255, 253, 237, 0.774);
+    display: flex;
+    padding: 3%;
+    border: thick double #fed800;
+}
+
+.sousmain {
+    font-size: 105%;
+    color: rgba(0, 2, 4, 0.842);
+    font-family: cursive;
+    line-height: 200%;
+    padding: 3%;
+}
+
+.img {
+    height: 1000%;
+    width: 40%;
+    padding-top: 5%;
+}
+
+.monh2 {
+    padding-top: 0;
+    padding-bottom: 4%;
 }
