@@ -334,103 +334,7 @@ h3 {
 
 /* PARTIE DE JEAN SEB */
 
-/*Titre et texte + background*/
-.row{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
-    padding-right: 8%;
-    background-image: url(images/drapeaupays.jpg);
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position-y: 88%;
-    background-position-x: 38%;
-}
-
-.col{
-    flex-basis: 80%;
-}
-
-.col > h1{
-    color: rgb(180, 12, 46);
-    font-size: 100px;
-}
-
-.col > p{
-    color: rgb(0, 31, 88);
-    font-size: 15px;
-    line-height: 50px;
-}
-
-/*Bouton*/
-
-button{
-    width: 180px;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    padding: 12px 0;
-    background: rgb(0, 31, 88);
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    margin-top: 30px;
-    cursor: pointer;
-}
-
-/*cards*/
-
-.card{
-    width: 230px;
-    height: 260px;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px 15px;
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.5s;
-}
-
-.card1{
-    background-image: url(images/card1.webp);
-}
-.card2{
-    background-image: url(images/card2.jpg);
-}
-.card3{
-    background-image: url(images/card3.jpeg);
-}
-.card4{
-    background-image: url(images/card4.jpg);
-}
-.card5{
-    background-image: url(images/card5.jpg);
-}
-.card6{
-    background-image: url(images/card6.jpeg);
-}
-
-.card:hover{
-    transform: translateY(-10px);
-}
-
-.card > h5{
-    color:rgb(180, 12, 46);
-    text-shadow: 0 0 5px #999;
-}
-
-.card p{
-    text-shadow: 0 0 15px #000;
-    font-size: 10px;
-    color: #fff;
-}
+/*  */
 
 /***************NORVEGE***************/
 
@@ -453,7 +357,7 @@ button{
     margin-top: 5%;
     padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
     padding-right: 8%;
-    background-image: url(images/drapeaupays.jpg);
+    background-image: url(../images/drapeaupays.jpg);
     background-size: 55%;
     background-repeat: no-repeat;
     background-position-y: 88%;
@@ -507,22 +411,22 @@ button{
 }
 
 .card1{
-    background-image: url(images/card1.webp);
+    background-image: url(../images/card1.webp);
 }
 .card2{
-    background-image: url(images/card2.jpg);
+    background-image: url(../images/card2.jpg);
 }
 .card3{
-    background-image: url(images/card3.jpeg);
+    background-image: url(../images/card3.jpeg);
 }
 .card4{
-    background-image: url(images/card4.jpg);
+    background-image: url(../images/card4.jpg);
 }
 .card5{
-    background-image: url(images/card5.jpg);
+    background-image: url(../images/card5.jpg);
 }
 .card6{
-    background-image: url(images/card6.jpeg);
+    background-image: url(../images/card6.jpeg);
 }
 
 .card:hover{
@@ -556,7 +460,7 @@ button{
     margin-top: 5%;
     padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
     padding-right: 8%;
-    background-image: url(images/Suisse/backgroundsuisse.png);
+    background-image: url(../images/Suisse/backgroundsuisse.png);
     background-size: 55%;
     background-repeat: no-repeat;
     background-position-y:78%;
@@ -610,22 +514,22 @@ button{
 }
 
 .card1suisse{
-    background-image: url(images/Suisse/card1suisse.jpg);
+    background-image: url(../images/Suisse/card1suisse.jpg);
 }
 .card2suisse{
-    background-image: url(images/Suisse/card2suisse.webp);
+    background-image: url(../images/Suisse/card2suisse.webp);
 }
 .card3suisse{
-    background-image: url(images/Suisse/card3suisse.jpg);
+    background-image: url(../images/Suisse/card3suisse.jpg);
 }
 .card4suisse{
-    background-image: url(images/Suisse/card4suisse.jpg);
+    background-image: url(../images/Suisse/card4suisse.jpg);
 }
 .card5suisse{
-    background-image: url(images/Suisse/card5suisse.jpg);
+    background-image: url(../images/Suisse/card5suisse.jpg);
 }
 .card6suisse{
-    background-image: url(images/Suisse/card6suisse.jpg);
+    background-image: url(../images/Suisse/card6suisse.jpg);
 }
 
 .card:hover{
@@ -660,7 +564,7 @@ button{
     margin-top: 5%;
     padding-left: 8%; /*espace a droite et a gauche la nav bar et le logo de la page*/
     padding-right: 8%;
-    background-image: url(images/Tahiti/backgroundtahiti.jpg);
+    background-image: url(../images/Tahiti/backgroundtahiti.jpg);
     background-size: 55%;
     background-repeat: no-repeat;
     background-position-y: 58%;
@@ -714,22 +618,22 @@ button{
 }
 
 .card1tahiti{
-    background-image: url(images/Tahiti/card1tahiti.jpg);
+    background-image: url(../images/Tahiti/card1tahiti.jpg);
 }
 .card2tahiti{
-    background-image: url(images/Tahiti/card2tahiti.jpg);
+    background-image: url(../images/Tahiti/card2tahiti.jpg);
 }
 .card3tahiti{
-    background-image: url(images/Tahiti/card3tahiti.jpg);
+    background-image: url(../images/Tahiti/card3tahiti.jpg);
 }
 .card4tahiti{
-    background-image: url(images/Tahiti/card4tahiti.jpg);
+    background-image: url(../images/Tahiti/card4tahiti.jpg);
 }
 .card5tahiti{
-    background-image: url(images/Tahiti/card5tahiti.jpg);
+    background-image: url(../images/Tahiti/card5tahiti.jpg);
 }
 .card6tahiti{
-    background-image: url(images/Tahiti/card6tahiti.jpg);
+    background-image: url(../images/Tahiti/card6tahiti.jpg);
 }
 
 .card:hover{
